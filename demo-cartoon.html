@@ -2,27 +2,54 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Demo Cartoon</title>
+    <title>Demo Cartoon Sound Design</title>
+    <style>
+        body {
+            width: 400px;       /* Đặt chiều rộng tổng thể trang */
+            margin: 0 auto;     /* Căn giữa thân trang */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        div {
+            margin-bottom: 30px; /* Khoảng cách giữa các video */
+        }
+        video {
+            display: block;     /* Video xuống dòng */
+            margin-left: 0;     /* Canh lề trái cho video */
+            width: 320px;
+            height: 240px;
+        }
+        p {
+            margin-top: 8px;
+            margin-left: 0;     /* Canh lề trái cho đoạn text */
+            font-size: 14px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Demo Cartoon</h1>
 
     <div>
-        <video width="320" height="240" controls>
+        <video controls>
             <source src=".\video-output-cartoon\input_silent_video.mp4" type="video/mp4">
         </video>
         <p>1) Video 1: video gốc không có âm thanh.</p>
     </div>
     
     <div>
-        <video width="320" height="240" controls>
+        <video controls>
             <source src=".\video-output-cartoon\step1_generated_video.mp4" type="video/mp4">
         </video>
         <p>2) Video 2: từ video 1 dùng ThinkSound tạo ra âm thanh.</p>
     </div>
     
     <div>
-        <video width="320" height="240" controls>
+        <video controls>
             <source src=".\video-output-cartoon\step4_final_video_with_new_audio.mp4" type="video/mp4">
         </video>
         <p>3) Video 3: từ video 2 dùng MusicGen chỉnh lại âm thanh dựa vào giai điệu của video 2</p>
